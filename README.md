@@ -42,7 +42,7 @@ El sistema contempla:
 
 ###   2.2 Base de Datos
 
-- Diagrama entidad-relación (ER) con 5 entidades según la nomenclatura de Piattinni vista en clases.
+- Diagrama entidad-relación (ER) con 5 entidades según la notación de Piattinni vista en clases.
 - Descripción sencilla del modelo Entidad-Relación para mayor comprensión. Disponible en doc. 
 - Script SQL para la creación física de la base de datos.
 - Descripción detallada de entidades, atributos y restricciones en las tablas.
