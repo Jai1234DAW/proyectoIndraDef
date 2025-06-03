@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conferencia sobre economía circular - Detalle del evento</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <div class="header-envoltorio">
+      <div class="header-izq">
+        <h1>Conferencia sobre Economía Circular</h1>
+        <nav>
+          <ul>
+            <li><a href="paginaPrincipal.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img src="imagenes/Sostenibilidad.jpg" alt="Logo sostenible" class="header-image">
+    </div>
+  </header>
+
+  <main>
+    <section class="evento-detalle">
+      <img src="imagenes/evento3.jpg" alt="Conferencia de economía circular" style="max-width:100%; height:auto;" />
+      <h2>Descripción</h2>
+      <p>
+      Esta conferencia aborda el impacto y las oportunidades que ofrece la economía circular como modelo innovador para transformar 
+      los sistemas de producción y consumo. A través del análisis de casos y experiencias, se explorará cómo este enfoque contribuye 
+      a la sostenibilidad ambiental, económica y social de las comunidades. Está dirigida a profesionales, emprendedores, estudiantes 
+      y público en general interesado en impulsar un cambio hacia un desarrollo más responsable y eficiente en el uso de los recursos.
+      </p>
+
+      <h2>Detalles del evento</h2>
+      <ul>
+        <li><strong>Fecha:</strong> 25 de junio de 2025</li>
+        <li><strong>Hora:</strong> 3:00 PM - 6:00 PM</li>
+        <li><strong>Ubicación:</strong> Online</li>
+        <li><strong>Organizador:</strong> Red Circular España</li>
+        <li><strong>Contacto:</strong> eventos@redcircular.org | Tel: +980 654 3210</li>
+      </ul>
+
+      <h2>Objetivos de la conferencia</h2>
+      <ul>
+        <li>Presentar casos de éxito de economía circular.</li>
+        <li>Conectar empresas y ciudadanos comprometidos con la sostenibilidad.</li>
+        <li>Debatir sobre políticas públicas en sostenibilidad económica.</li>
+        <li>Contraste entre economía circular y economía linear.</li>
+      </ul>
+
+      <h2>Certificación</h2>
+      <ul>
+        <li>Certificado digital avalado por Red Circular y entidades académicas colaboradoras.</li>
+      </ul>
+
+      <div class="botones-inscripcion">
+        <button onclick="mostrarFormulario()">Inscribirse</button>
+        <button onclick="cancelarInscripcion()">Cancelar inscripción</button>
+      </div>
+
+      <div id="formulario-inscripcion">
+        <h3>Formulario de inscripción</h3>
+        <form>
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="correo">Correo electrónico:</label><br />
+          <input type="email" id="correo" name="correo" required /><br /><br />
+
+          <label for="telefono">Número de teléfono:</label><br />
+          <input type="tel" id="telefono" name="telefono" required /><br />
+
+          <label for="pago">Modalidad de pago:</label><br />
+          <select id="pago" name="pago" required>
+            <option value="">Seleccione una opción</option>
+            <option value="paypal">PayPal</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select><br />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div id="mensaje-cancelacion">
+        <p><strong>Inscripción al evento cancelada.</strong></p>
+      </div>
+      <a href="eventos.html" class="volver-enlace">← Volver a la lista de eventos</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Portal de Eventos Sostenibles</p>
+  </footer>
+
+    <script src="js/mostrarFormulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conferencia sobre energías renovables - Detalle del evento</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-envoltorio">
+      <div class="header-izq">
+        <h1>Conferencia sobre Energías Renovables</h1>
+        <nav>
+          <ul>
+            <li><a href="paginaPrincipal.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img src="imagenes/Sostenibilidad.jpg" alt="Logo sostenible" class="header-image">
+    </div>
+  </header>
+
+  <main>
+    <section class="evento-detalle">
+      <img src="imagenes/evento2.jpg" alt="Conferencia de energías renovables" style="max-width:100%; height:auto;" />
+      <h2>Descripción</h2>
+      <p>
+       Esta conferencia reúne a expertos nacionales e internacionales para analizar las últimas tendencias, avances y tecnologías 
+       en el ámbito de las energías renovables. El objetivo es fomentar el intercambio de conocimientos y experiencias que impulsen 
+       un futuro energético más limpio, eficiente y sostenible. La actividad está dirigida a profesionales, estudiantes y público 
+       interesado en las soluciones energéticas del mañana y su impacto en el desarrollo ambiental y social.
+      </p>
+
+      <h2>Detalles del evento</h2>
+      <ul>
+        <li><strong>Fecha:</strong> 18 de junio de 2025</li>
+        <li><strong>Hora:</strong> 9:00 AM - 12:30 PM</li>
+        <li><strong>Ubicación:</strong> Auditorio EcoCentro, A Coruña</li>
+        <li><strong>Organizador:</strong> Fundación Energía Viva</li>
+        <li><strong>Contacto:</strong> contacto@energiaviva.org | Tel: +980 254 4567</li>
+      </ul>
+
+      <h2>Objetivos del evento</h2>
+      <ul>
+        <li>Informar sobre nuevas tecnologías energéticas limpias.</li>
+        <li>Fomentar el uso de energías renovables en la industria y el hogar.</li>
+        <li>Establecer redes de colaboración entre profesionales del sector.</li>
+        <li>Propuesta de Energía Renovables acordes al presupuesto de cada hogar</li>
+      </ul>
+
+      <h2>Certificación</h2>
+      <ul>
+        <li>Certificado de participación emitido por Fundación Energía Viva.</li>
+      </ul>
+
+
+      <div class="botones-inscripcion">
+        <button onclick="mostrarFormulario()">Inscribirse</button>
+        <button onclick="cancelarInscripcion()">Cancelar inscripción</button>
+      </div>
+
+      <div id="formulario-inscripcion">
+        <h3>Formulario de inscripción</h3>
+        <form>
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="correo">Correo electrónico:</label><br />
+          <input type="email" id="correo" name="correo" required /><br /><br />
+
+          <label for="telefono">Número de teléfono:</label><br />
+          <input type="tel" id="telefono" name="telefono" required /><br />
+
+          <label for="pago">Modalidad de pago:</label><br />
+          <select id="pago" name="pago" required>
+            <option value="">Seleccione una opción</option>
+            <option value="paypal">PayPal</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select><br />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div id="mensaje-cancelacion">
+        <p><strong>Inscripción al evento cancelada.</strong></p>
+      </div>
+      <a href="eventos.html" class="volver-enlace">← Volver a la lista de eventos</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Portal de Eventos Sostenibles</p>
+  </footer>
+
+    <script src="js/mostrarFormulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Eventos Sostenibles</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+  <div class="header-envoltorio">
+    <div class="header-izq">
+      <h1>Portal Para La Gestión De Eventos Sostenibles</h1>
+      <nav>
+        <ul>
+          <li><a href="paginaPrincipal.html">Inicio</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <img src="imagenes/Sostenibilidad.jpg" alt="Logo sostenible" class="header-image">
+  </div>
+</header>
+
+  <main>
+    <section id="presentacion">
+      <h2>Bienvenidos al portal</h2>
+      <p>Descubre eventos que promueven un futuro más verde: conferencias, talleres y mucho más.
+        ¡Atrevete a ser parte de un mundo Sostenible!
+      </p>
+    </section>
+
+    <section id="carrusel">
+      <h2>Eventos destacados</h2>
+      <div class="carrusel-container">
+        <button class="flecha izq" onclick="moverCarrusel(-1)">&#10094;</button>
+        <div class="carrusel" id="carrusel-inner">
+          <div class="evento">
+            <img src="imagenes/evento1.jpg" alt="Evento 1">
+            <h3><a href="detalle-evento1.html">Taller de reciclaje casero</a></h3>
+            <p>Aprende a reutilizar y reducir residuos en casa y hacer productos completamente nuevos.</p>
+          </div>
+          <div class="evento">
+            <img src="imagenes/evento2.jpg" alt="Evento 2">
+            <h3><a href="detalle-evento2.html">Conferencia sobre energías renovables</a></h3>
+            <p>Expertos discuten el futuro energético sostenible y económico.</p>
+          </div>
+          <div class="evento">
+            <img src="imagenes/evento3.jpg" alt="Evento 3">
+            <h3><a href="detalle-evento3.html">Conferencia sobre economía circular que revoluciona al mundo</a></h3>
+            <p>Descubre cómo implementar este modelo en tu entorno para crear comunidades sostenibles que no compremeten las generaciones futuras.</p>
+          </div>
+           <div class="evento">
+            <img src="imagenes/evento4.jpg" alt="Evento 4">
+            <h3><a href="detalle-evento4.html">Ruta ecológica a "Los Roques"</a></h3>
+            <p>Explora preciosos espacios naturales y aprende sobre biodiversidad.</p>
+          </div>
+        </div>
+        <button class="flecha der" onclick="moverCarrusel(1)">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portal de Eventos Sostenibles</p>
+  </footer>
+
+ <script src="js/carrusel.js"></script>
+</body>
+</html>
