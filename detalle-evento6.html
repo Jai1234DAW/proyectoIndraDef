@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Excursión a El Mirador - Detalle del evento</title>
+  <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-envoltorio">
+      <div class="header-izq">
+        <h1>Excursión Guiada a Reserva Natural “El Mirador”</h1>
+        <nav>
+          <ul>
+            <li><a href="paginaPrincipal.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+          </ul>
+        </nav>
+      </div>
+        <img src="imagenes/Sostenibilidad.jpg" alt="Logo sostenible" class="header-image">
+    </div>
+  </header>
+
+  <main>
+    <section class="evento-detalle">
+      <img src="imagenes/evento6.jpg" alt="Excursión a El Mirador" style="max-width:100%; height:auto;" />
+      <h2>Descripción</h2>
+      <p>
+       Esta excursión guiada al mirador ofrece una caminata por senderos naturales acompañada por especialistas en biodiversidad, 
+       quienes compartirán conocimientos sobre la flora y fauna de la zona. A lo largo del recorrido, se destacará la importancia 
+       de conservar los ecosistemas locales y se fomentará una conexión consciente con el entorno natural. La actividad está dirigida
+       a quienes buscan una experiencia formativa y de contacto directo con la naturaleza.
+
+
+      </p>
+
+      <h2>Detalles del evento</h2>
+      <ul>
+        <li><strong>Fecha:</strong> 12 de julio de 2025</li>
+        <li><strong>Hora:</strong> 9:30 AM - 2:30 PM</li>
+        <li><strong>Ubicación:</strong> Reserva Natural “El Mirador”, Lugo</li>
+        <li><strong>Organizador:</strong> Asociación VerdeClaro</li>
+        <li><strong>Contacto:</strong> reservas@verdeclaro.org | Tel: +980 888 1122</li>
+      </ul>
+
+      <h2>Objetivos de la excursión</h2>
+      <ul>
+        <li>Fomentar la educación ambiental en espacios naturales.</li>
+        <li>Conocer especies nativas y su rol en el ecosistema.</li>
+        <li>Incentivar la protección y el respeto por el entorno.</li>
+      </ul>
+
+      <h2>Certificación</h2>
+      <ul>
+        <li>Certificado de participación en actividades de educación ambiental al aire libre.</li>
+      </ul>
+
+<div class="botones-inscripcion">
+        <button onclick="mostrarFormulario()">Inscribirse</button>
+        <button onclick="cancelarInscripcion()">Cancelar inscripción</button>
+      </div>
+
+      <div id="formulario-inscripcion">
+        <h3>Formulario de inscripción</h3>
+        <form>
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="correo">Correo electrónico:</label><br />
+          <input type="email" id="correo" name="correo" required /><br /><br />
+
+          <label for="telefono">Número de teléfono:</label><br />
+          <input type="tel" id="telefono" name="telefono" required /><br />
+
+          <label for="pago">Modalidad de pago:</label><br />
+          <select id="pago" name="pago" required>
+            <option value="">Seleccione una opción</option>
+            <option value="paypal">PayPal</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select><br />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div id="mensaje-cancelacion">
+        <p><strong>Inscripción al evento cancelada.</strong></p>
+      </div>
+      <a href="eventos.html" class="volver-enlace">← Volver a la lista de eventos</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Portal de Eventos Sostenibles</p>
+  </footer>
+
+    <script src="js/mostrarFormulario.js"></script>
+</body>
+</html>

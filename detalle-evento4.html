@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruta ecológica a Los Roques - Detalle del evento</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <div class="header-envoltorio">
+      <div class="header-izq">
+        <h1>Ruta Ecológica a "Los Roques"</h1>
+        <nav>
+          <ul>
+            <li><a href="paginaPrincipal.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+          </ul>
+        </nav>
+      </div>
+       <img src="imagenes/Sostenibilidad.jpg" alt="Logo sostenible" class="header-image">
+    </div>
+  </header>
+
+  <main>
+    <section class="evento-detalle">
+      <img src="imagenes/evento4.jpg" alt="Ruta ecológica" style="max-width:100%; height:auto;" />
+      <h2>Descripción</h2>
+      <p>
+        Esta ruta ecológica ofrece una experiencia educativa y de sensibilización ambiental en el Parque Nacional Archipiélago 
+        Los Roques, uno de los ecosistemas marinos y terrestres más relevantes del país. A través de recorridos guiados por 
+        espacios naturales protegidos, los participantes podrán conocer de cerca la biodiversidad local, así como las prácticas 
+        de conservación que buscan preservar este valioso entorno. La actividad está orientada a quienes deseen conectar con 
+        la naturaleza y fortalecer su compromiso con el cuidado del medio ambiente.
+      </p>
+
+      <h2>Detalles del evento</h2>
+      <ul>
+        <li><strong>Fecha:</strong> 20 de junio de 2025</li>
+        <li><strong>Hora:</strong> 8:00 AM - 2:00 PM</li>
+        <li><strong>Ubicación:</strong> Parque Nacional Los Roques</li>
+        <li><strong>Organizador:</strong> EcoAventura Tours</li>
+        <li><strong>Contacto:</strong> info@ecoaventura.org | Tel: +980 321 9876</li>
+      </ul>
+
+      <h2>Objetivos de la excursión</h2>
+      <ul>
+        <li>Concientizar sobre la biodiversidad y su conservación.</li>
+        <li>Incentivar el turismo ecológico responsable.</li>
+        <li>Ofrecer una experiencia educativa y recreativa en la naturaleza.</li>
+      </ul>
+
+      <h2>Certificación</h2>
+      <ul>
+        <li>Certificado de participación en actividades de educación ambiental.</li>
+      </ul>
+
+    
+      <div class="botones-inscripcion">
+        <button onclick="mostrarFormulario()">Inscribirse</button>
+        <button onclick="cancelarInscripcion()">Cancelar inscripción</button>
+      </div>
+
+      <div id="formulario-inscripcion">
+        <h3>Formulario de inscripción</h3>
+        <form>
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="correo">Correo electrónico:</label><br />
+          <input type="email" id="correo" name="correo" required /><br /><br />
+
+          <label for="telefono">Número de teléfono:</label><br />
+          <input type="tel" id="telefono" name="telefono" required /><br />
+
+          <label for="pago">Modalidad de pago:</label><br />
+          <select id="pago" name="pago" required>
+            <option value="">Seleccione una opción</option>
+            <option value="paypal">PayPal</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select><br />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div id="mensaje-cancelacion">
+        <p><strong>Inscripción al evento cancelada.</strong></p>
+      </div>
+      <a href="eventos.html" class="volver-enlace">← Volver a la lista de eventos</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Portal de Eventos Sostenibles</p>
+  </footer>
+
+   <script src="js/mostrarFormulario.js"></script>
+</body>
+</html>

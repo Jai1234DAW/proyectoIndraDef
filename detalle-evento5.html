@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taller de compostaje doméstico - Detalle del evento</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <div class="header-envoltorio">
+      <div class="header-izq">
+        <h1>Taller de Compostaje Doméstico</h1>
+        <nav>
+          <ul>
+            <li><a href="paginaPrincipal.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img src="imagenes/Sostenibilidad.jpg" alt="Logo sostenible" class="header-image">
+    </div>
+  </header>
+
+  <main>
+    <section class="evento-detalle">
+      <img src="imagenes/evento5.png" alt="Taller de compostaje" style="max-width:100%; height:auto;" />
+      <h2>Descripción</h2>
+      <p>
+       Este taller de compostaje doméstico tiene como objetivo capacitar a los participantes en la transformación de residuos 
+       orgánicos en abono natural, promoviendo prácticas sostenibles dentro del hogar. A través de una metodología clara y 
+       accesible, se abordarán los principios fundamentales del compostaje, su aplicación práctica y sus beneficios ambientales. 
+       Está dirigido a personas interesadas en reducir su generación de residuos y contribuir activamente al cuidado del medio 
+       ambiente desde su entorno cotidiano.
+      </p>
+
+      <h2>Detalles del evento</h2>
+      <ul>
+        <li><strong>Fecha:</strong> 28 de junio de 2025</li>
+        <li><strong>Hora:</strong> 4:00 PM - 7:00 PM</li>
+        <li><strong>Ubicación:</strong> Online</li>
+        <li><strong>Organizador:</strong> Fundación BioHogar</li>
+        <li><strong>Contacto:</strong> contacto@biohogar.org | Tel: +980 741 8854</li>
+      </ul>
+
+      <h2>Objetivos del taller</h2>
+      <ul>
+        <li>Reducir residuos orgánicos en el hogar.</li>
+        <li>Fomentar el uso de compost como fertilizante natural.</li>
+        <li>Capacitar en técnicas prácticas de compostaje.</li>
+      </ul>
+
+      <h2>Certificación</h2>
+      <ul>
+        <li>Certificado de asistencia en técnicas básicas de compostaje doméstico.</li>
+      </ul>
+  <div class="botones-inscripcion">
+        <button onclick="mostrarFormulario()">Inscribirse</button>
+        <button onclick="cancelarInscripcion()">Cancelar inscripción</button>
+      </div>
+
+      <div id="formulario-inscripcion">
+        <h3>Formulario de inscripción</h3>
+        <form>
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="correo">Correo electrónico:</label><br />
+          <input type="email" id="correo" name="correo" required /><br /><br />
+
+          <label for="telefono">Número de teléfono:</label><br />
+          <input type="tel" id="telefono" name="telefono" required /><br />
+
+          <label for="pago">Modalidad de pago:</label><br />
+          <select id="pago" name="pago" required>
+            <option value="">Seleccione una opción</option>
+            <option value="paypal">PayPal</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select><br />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div id="mensaje-cancelacion">
+        <p><strong>Inscripción al evento cancelada.</strong></p>
+      </div>
+      <a href="eventos.html" class="volver-enlace">← Volver a la lista de eventos</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Portal de Eventos Sostenibles</p>
+  </footer>
+
+  <script src="js/mostrarFormulario.js"></script>
+</body>
+</html>

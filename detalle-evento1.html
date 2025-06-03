@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taller de reciclaje casero - Detalle del evento</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-envoltorio">
+      <div class="header-izq">
+        <h1>Taller de Reciclaje Casero</h1>
+        <nav>
+          <ul>
+            <li><a href="paginaPrincipal.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img src="imagenes/Sostenibilidad.jpg" alt="Logo sostenible" class="header-image">
+    </div>
+  </header>
+
+  <main>
+    <section class="evento-detalle">
+      <img src="imagenes/evento1.jpg" alt="Taller de reciclaje casero" style="max-width:100%; height:auto;" />
+      <h2>Descripción</h2>
+      <p>
+       Este taller de reciclaje casero está diseñado para promover prácticas sostenibles mediante la reducción y reutilización de 
+       residuos en el entorno doméstico. A través de una metodología práctica, se abordarán técnicas accesibles para la correcta 
+       clasificación de residuos, la elaboración de compost y la reutilización creativa de materiales cotidianos. 
+       Está dirigido a personas interesadas en adoptar hábitos responsables que favorezcan el cuidado del medio ambiente desde su 
+       hogar.
+      </p>
+
+      <h2>Detalles del evento</h2>
+      <ul>
+        <li><strong>Fecha:</strong> 15 de junio de 2025</li>
+        <li><strong>Hora:</strong> 10:00 AM - 1:00 PM</li>
+        <li><strong>Ubicación:</strong> Centro Comunitario Costa Verde, Calle "La Rosa", Ferrol</li>
+        <li><strong>Organizador:</strong> Fundación EcoVida</li>
+        <li><strong>Contacto:</strong> info@fundacionecovida.org | Tel: +980 456 7890</li>
+      </ul>
+
+      <h2>Objetivos del taller</h2>
+      <ul>
+        <li>Promover prácticas sostenibles en el hogar.</li>
+        <li>Reducir la generación de residuos a través del reciclaje y la reutilización.</li>
+        <li>Fomentar el compromiso ambiental en la comunidad.</li>
+      </ul>
+
+      <h2>Certificación</h2>
+      <ul>
+        <li>Certificación aprobada por la organización y entidades ambientales sobre reciclaje.</li>
+      </ul>
+
+ 
+      <div class="botones-inscripcion">
+        <button onclick="mostrarFormulario()">Inscribirse</button>
+        <button onclick="cancelarInscripcion()">Cancelar inscripción</button>
+      </div>
+
+      <div id="formulario-inscripcion">
+        <h3>Formulario de inscripción</h3>
+        <form>
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="correo">Correo electrónico:</label><br />
+          <input type="email" id="correo" name="correo" required /><br /><br />
+
+          <label for="telefono">Número de teléfono:</label><br />
+          <input type="tel" id="telefono" name="telefono" required /><br />
+
+          <label for="pago">Modalidad de pago:</label><br />
+          <select id="pago" name="pago" required>
+            <option value="">Seleccione una opción</option>
+            <option value="paypal">PayPal</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select><br />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div id="mensaje-cancelacion">
+        <p><strong>Inscripción al evento cancelada.</strong></p>
+      </div>
+      <a href="eventos.html" class="volver-enlace">← Volver a la lista de eventos</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Portal de Eventos Sostenibles</p>
+  </footer>
+
+   <script src="js/mostrarFormulario.js"></script>
+</body>
+</html>
